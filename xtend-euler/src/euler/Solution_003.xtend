@@ -8,7 +8,7 @@ class Solution_003 extends AbstractIterator<Long> {
 		println(new Solution_003().last)
 	}
 	
-	long compound = Long::valueOf("600851475143")
+	long compound = 600851475143L
 	long sqrt = Math::sqrt(compound).longValue
 	long current = 2
 	 
