@@ -15,9 +15,8 @@ class Solution_022 {
 			while(matcher.find) {
 				names.add(matcher.group(1))
 			}
-			names.sortInplace
 			val result = new AtomicLong
-			names.forEach [ name, i |
+			names.sort.forEach [ name, i |
 				result.addAndGet(name.toCharArray.map [ 
 					Character::getNumericValue(it) - 9
 				].reduce[ i1, i2 | 

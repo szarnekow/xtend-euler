@@ -6,7 +6,6 @@ import java.util.Set
 class Solution_023 {
 	def static void main(String[] args) {
 		val allAbundantNumbers = (28123..1).filter[isAbundant(it)].toSet
-		println(allAbundantNumbers)
 		println((28123..1).filter[ !isSumOfAbundantNumbers(it, allAbundantNumbers) ].reduce[ i1, i2 | i1 + i2])
 	}
 	
