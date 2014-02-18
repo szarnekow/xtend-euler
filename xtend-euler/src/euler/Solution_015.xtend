@@ -24,7 +24,7 @@ class Solution_015 {
 		0.solve
 	}
 	
-	def solve(int position) {
+	def long solve(int position) {
 		if (position.valid) {
 			return if (position.done) solutions.get(position) else {
 				var result = position.moveRight.solve
